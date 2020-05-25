@@ -6,7 +6,7 @@ Data is fetched from Johns Hopkins University
 Analysis is done using Altair visualisation library, and automatically saved to powerpoint file
 
 # Setup information
-The following instructions were used on Mac.
+The following were the steps used for first time setup on Mac.
 
 ``` 
 ## first time setup
@@ -39,9 +39,12 @@ mv chromedriver /usr/local/bin/
 # load jupyter notebook
 # note, might need to ensure Jupyter notebook has correct python kernel selected first time
 jupyter notebook covid.ipynb
+``` 
 
 
-## subsequent runs, after setup is done
+# Startup on subsequent runs
+After first-time setup, subsequent runs can simply use the following:
+```
 cd <directory path>
 conda activate py3
 
