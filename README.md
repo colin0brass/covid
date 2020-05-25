@@ -1,9 +1,7 @@
 # covid
-This is a Jupyter Notebook dashboard to analyse and display Covid-19 case data
+This is a dashboard for Covid-19 case data, using python and a Jupyter notebook to analyse and display the data from Johns Hopkins University.
 
-Data is fetched from Johns Hopkins University
-
-Analysis is done using Altair visualisation library, and automatically saved to powerpoint file
+Analysis is done using Altair visualisation library, and automatically saved to powerpoint file.
 
 # Setup information
 The following were the steps used for first time setup on Mac.
