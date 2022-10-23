@@ -28,7 +28,7 @@ pip install pycountry_convert
 pip install altair_saver
 
 # altair_saver has dependencies which aren't so straightforward, at least on Mac
-# https://www.swtestacademy.com/install-chrome-driver-on-mac/
+# Install selenium using the chromedriver package from: https://chromedriver.chromium.org
 # choose appropriate zip from files ending "linx64" or "mac64" or "mac_arm64" or "win32"
 chromedriver_latest_stable_release='106.0.5249.61'
 chromedriver_name=chromedriver_mac_arm64
