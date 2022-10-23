@@ -6,7 +6,7 @@ Analysis is done using Altair visualisation library, and automatically saved to 
 # Setup information
 The following were the steps used for first time setup on Mac.
 
-``` 
+```
 ## first time setup
 cd <directory path>
 conda create -n py3 python=3.7
@@ -29,15 +29,18 @@ pip install altair_saver
 
 # altair_saver has dependencies which aren't so straightforward, at least on Mac
 # https://www.swtestacademy.com/install-chrome-driver-on-mac/
-wget https://chromedriver.storage.googleapis.com/83.0.4103.39/chromedriver_mac64.zip
-unzip chromedriver_mac64.zip
-rm chromedriver_mac64.zip
+# choose appropriate zip from files ending "linx64" or "mac64" or "mac_arm64" or "win32"
+chromedriver_latest_stable_release='106.0.5249.61'
+chromedriver_name=chromedriver_mac_arm64
+wget https://chromedriver.storage.googleapis.com/${chromedriver_latest_stable_release}/${chromedriver_name}.zip
+unzip ${chromedriver_name}.zip
+rm ${chromedriver_name}.zip
 mv chromedriver /usr/local/bin/
 
 # load jupyter notebook
 # note, might need to ensure Jupyter notebook has correct python kernel selected first time
 jupyter notebook covid.ipynb
-``` 
+```
 
 
 # Startup on subsequent runs
@@ -48,4 +51,4 @@ conda activate py3
 
 # load jupyter notebook
 jupyter notebook covid.ipynb
-``` 
+```
